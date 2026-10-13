@@ -1,0 +1,23 @@
+[project]
+name = "smartsearchradius"
+version = "0.1.0"
+description = "Kleinanzeigen-Suche gefiltert nach echter Fahrzeit statt Luftlinien-Radius"
+readme = "README.md"
+authors = [
+    { name = "Fynn Orth", email = "fynnorth@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.5",
+    "folium>=0.20.0",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.2",
+    "selectolax>=0.4.11",
+    "shapely>=2.1.2",
+    "streamlit>=1.61.1",
+    "streamlit-folium>=0.27.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.8,<0.11.0"]
+build-backend = "uv_build"
